@@ -15,6 +15,9 @@ namespace Sweepstakes
 
             ISweepstakesManager sweepstakes = new MarketingFirm(stack);
             sweepstakes.GetSweepstakes();
+
+
+            Console.ReadLine();
         }
     }
 }
