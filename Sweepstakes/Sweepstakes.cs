@@ -6,13 +6,26 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Sweepstakes
+    class Sweepstakes 
     {
-        public Sweepstakes()
+        private Dictionary<int, Contestant> contestants;
+        private string name;
+        
+        public string Name { get; set; }
+            
+        public Sweepstakes(string name)
+        {
+            Name = name;
+        }
+        public void RegisterContestant(Contestant contestant)
         {
 
         }
-        public void CreateMarketingFirmManager()
+        public Contestant PickWinner()
+        {
+
+        }
+        public void PrintContestantinfo(Contestant contestant)
         {
 
         }

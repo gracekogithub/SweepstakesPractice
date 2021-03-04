@@ -8,5 +8,19 @@ namespace Sweepstakes
 {
     class Contestant
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string EmailAddress { get; set; }
+        int RegistrationNumber { get; set; }
+        public Contestant()
+        {
+
+        }
+        public void Register (string name, string emailAddress, int registrationNumber)
+        {
+            
+        }
+
+
     }
 }
