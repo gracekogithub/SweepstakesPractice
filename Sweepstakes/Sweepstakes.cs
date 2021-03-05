@@ -16,7 +16,7 @@ namespace Sweepstakes
       
       
         public Sweepstakes(string name)
-        {
+        { 
             Name = name;
             
         }
@@ -28,21 +28,19 @@ namespace Sweepstakes
                 contestants.Display();
             }
         }
-        public Contestant PickWinner()
+        public Contestant PickWinner(Contestant contestants)
         {
-            List<Contestant> contestants = new List<Contestant>();
-           
             int randomRegistrationNumber;
             Random actualWinner = new Random();
             randomRegistrationNumber = actualWinner.Next();
             Console.WriteLine("The winner is: "+ randomRegistrationNumber);
 
-            return Contestant.Add(actualWinner);
+            return contestants;
             
         }
         public void PrintContestantinfo(Contestant contestant)
         {
-
+            Console.WriteLine(contestant.Display());
         }
     }
 }

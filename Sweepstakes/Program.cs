@@ -13,8 +13,6 @@ namespace Sweepstakes
             SweepstakesStackManager stack = new SweepstakesStackManager();
             SweepstakesQueueManager queue = new SweepstakesQueueManager();
 
-            ISweepstakesManager sweepstakes = new MarketingFirm(stack);
-            sweepstakes.GetSweepstakes();
 
 
             Console.ReadLine();

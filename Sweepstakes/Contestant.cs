@@ -8,10 +8,10 @@ namespace Sweepstakes
 {
     public class Contestant
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string EmailAddress { get; set; }
-        int RegistrationNumber { get; set; }
+        public string FirstName { get; protected set; }
+        public string LastName { get; protected set; }
+        public string EmailAddress { get; protected set; }
+        public int RegistrationNumber { get; protected set; }
         public Contestant(string firstname, string lastName, string emailAddress, int registrationNumber)
         {
             FirstName = firstname;
