@@ -21,7 +21,9 @@ namespace Sweepstakes
         }
         public Sweepstakes GetSweepstakes()
         {
-             
+            Sweepstakes getSweep = stack.Pop();
+            Console.WriteLine(stack.Peek());
+            return getSweep;
         }
     }
 }
