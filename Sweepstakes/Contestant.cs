@@ -12,17 +12,17 @@ namespace Sweepstakes
         public string LastName { get; protected set; }
         public string EmailAddress { get; protected set; }
         public int RegistrationNumber { get; protected set; }
-        public Contestant(string firstname, string lastName, string emailAddress, int registrationNumber)
-        {
-            FirstName = firstname;
-            LastName = lastName;
-            EmailAddress = emailAddress;
-            RegistrationNumber = registrationNumber;
+        //public Contestant(string firstname, string lastName, string emailAddress, int registrationNumber)
+        //{
+        //    FirstName = firstname;
+        //    LastName = lastName;
+        //    EmailAddress = emailAddress;
+        //    RegistrationNumber = registrationNumber;
 
-        }
+        //}
         public string Display()
         {
-            return String.Format("{0}: {1}, {2} {3}", RegistrationNumber, LastName, FirstName, EmailAddress);
+            return String.Format("{0}: {1}, {2}, {3}", RegistrationNumber, LastName, FirstName, EmailAddress);
         }
 
 

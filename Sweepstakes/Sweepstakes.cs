@@ -12,22 +12,28 @@ namespace Sweepstakes
         private string name;
         
         public string Name { get; set; }
-        public Dictionary<int, Contestant> Contestant { get; set; }
-      
-      
+        public Dictionary<int, Contestant> Contestant
+        {
+            get { return contestants; }
+            protected set { contestants = value; }
+        }
         public Sweepstakes(string name)
         { 
             Name = name;
-            
         }
         public void RegisterContestant(Contestant contestants)
         {
-            Dictionary<int, Contestant> names = new Dictionary<int, Contestant>();
-            foreach (var contestant in names)
+            Dictionary<int, Contestant> lookup = new Dictionary<int, Contestant>();
+            int i =0;
+            foreach (var data in lookup)
             {
                 contestants.Display();
+                lookup.Add(contestants.RegistrationNumber, contestants);
             }
+            Console.WriteLine(lookup[i].Display());
+
         }
+
         public Contestant PickWinner(Contestant contestants)
         {
             int randomRegistrationNumber;
