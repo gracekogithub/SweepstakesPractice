@@ -12,3 +12,7 @@ namespace Sweepstakes
         Sweepstakes GetSweepstakes();
     }
 }
+//types of dependency injection: constructor injection, setter injection, interface injection
+//benefit of using dependency injection:
+//:increase code reusabiliy, readability, maintainability, testibility and cohesion
+//:reduces coupling

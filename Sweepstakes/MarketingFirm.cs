@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        private ISweepstakesManager _manager;
+        ISweepstakesManager _manager;
         public MarketingFirm(ISweepstakesManager manager)
         {
             this._manager = manager;
@@ -30,7 +30,8 @@ namespace Sweepstakes
         
         public void CreateSweepstake()
         {
-
+            _manager.GetSweepstakes();
+           
         }
     }
 }

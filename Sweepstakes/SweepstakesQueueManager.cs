@@ -17,12 +17,12 @@ namespace Sweepstakes
         {
             queue.Enqueue(sweepstakes);
             Console.WriteLine(queue.Peek());
-           
-
         }
         public Sweepstakes GetSweepstakes()
         {
-            
+            Sweepstakes getSweep = queue.Dequeue();
+            Console.WriteLine(queue.Peek());
+            return getSweep;
         }
     }
 }

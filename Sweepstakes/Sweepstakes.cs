@@ -30,13 +30,14 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-            
+            List<Contestant> contestants = new List<Contestant>();
+           
             int randomRegistrationNumber;
-            Random winner = new Random();
-            randomRegistrationNumber = winner.Next();
+            Random actualWinner = new Random();
+            randomRegistrationNumber = actualWinner.Next();
             Console.WriteLine("The winner is: "+ randomRegistrationNumber);
 
-            return Contestant;
+            return Contestant.Add(actualWinner);
             
         }
         public void PrintContestantinfo(Contestant contestant)
